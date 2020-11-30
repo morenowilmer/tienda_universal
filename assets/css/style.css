@@ -1,0 +1,200 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    margin: 0;
+    background: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background: white;
+    color: black;
+    padding: 0rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.header a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* .navigation ul {
+    display: none;
+} */
+
+.navigation ul.show {
+    display: block;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.main {
+    padding-top: 10rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navigation {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navigation ul li {
+        display: block;
+    }
+    
+    .navigation ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+}
+
+/* Estilos agregados al final */
+.logo-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo-footer h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #BF4B4B;
+}
+.menu-footer {
+    background: #BF4B4B;
+}
+.navigation-option {
+    padding-top: 0.8rem;
+}
+.navigation-option ul li {
+    display: inline-block;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    padding: 0.1rem;
+}
+.navigation {
+    margin-left: 1rem;
+}
+.item-principal {
+    display: inline-block;
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: #fff65d transparent transparent transparent;
+}
+.navigation ul li a {
+	color:#fff;
+	text-decoration:none;
+    display:inline;
+}
+.navigation ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.navigation ul li:hover > ul {
+    display:block;
+}
+.navigation ul li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.navigation ul li ul li {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    background-color: #BF4B4B;
+    color: white;
+    padding: 0.1rem;    
+}
+.navigation ul li ul li a {
+    width: 100%;
+    color: #FFF65D;
+}
+.navigation ul li ul li a:hover {    
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.footer {
+    background-color: rgba(191, 75, 75, 0.5); 
+    line-height: 0.5em;  
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 3rem;
+}
+.footer h5 {
+    font-weight: bold;
+}
+.container-footer {
+    display: flex;    
+}
+.container-iconos-redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aling-left {
+    text-align: left;
+}
+img.super-small {
+    width: 20px;
+    height: 20px;
+}
+img.small {
+    width: 40px;
+    height: 40px;
+}
+img.median {
+    width: 80px;
+    height: 80px;
+}
+.imgRedonda {
+    border-radius: 150px;
+    border: 1px solid black;
+}
+.link-white {
+    text-decoration: none;
+    color: white;
+}
