@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Enter your description here" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Tienda Universal</title>
 </head>
@@ -18,40 +16,46 @@
     <!-- Header pagina -->
     <header class="header">
         <div class="container logo-nav-container col-md-12">
-            <div class="logo-footer col-md-8">
+            <div class="logo-header col-md-6">
                 <a href="#">
                     <img class="median" src="assets/image/logo.png" alt="Logo tienda universal">
                 </a>
                 <h1>Tienda Universal</h1>
             </div>
-            <span class="menu-icon">Ver menú</span>
 
-            <nav class="navigation-option col-md-4" aria-label="navigation option">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img class="small imgRedonda" src="assets/image/usuario.jpg" alt="Icono usuario">
-                        </a>
-                        <div>Usuario</div>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img class="small" src="assets/image/lista.png" alt="Icono pedidos">
-                        </a>
-                        <div>Mis pedidos</div>
-                    </li>
-                    <li class="flex">
-                        <a href="#">
-                            <img class="small" src="assets/image/carrito_compras.svg" alt="Icono carrito">                            
-                        </a>
-                        <div>Mi carrito</div>              
-                    </li>
-                </ul>
-            </nav>
+            <div class="navigation-option component-header col-md-6">
+                <nav aria-label="navigation option">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img class="small imgRedonda" src="assets/image/usuario.jpg" alt="Icono usuario">
+                            </a>
+                            <div>Usuario</div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="small" src="assets/image/lista.png" alt="Icono pedidos">
+                            </a>
+                            <div>Mis pedidos</div>
+                        </li>
+                        <li class="flex">
+                            <a href="#">
+                                <img class="small" src="assets/image/carrito_compras.svg" alt="Icono carrito">
+                            </a>
+                            <div>Mi carrito</div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <div class="menu-footer col-md-12">
+            <span id="ver-menu" class="menu-icon hide-element link-white">Ver menú</span>
+            <span id="ocultar-menu" class="menu-icon link-white">Ocultar menú</span>
             <nav class="navigation" aria-label="nav-menu">
-                <ul>
+                <ul class="menu-nav">
+                    <li><a class="link-white option-user col-md-3">Usuario</span></a>
+                    <li><a class="link-white option-user col-md-3">Mis pedidos</span></a>
+                    <li><a class="link-white option-user col-md-3">Mi carrito</span></a>
                     <li><a class="link-white col-md-3">Mercado <span class="item-principal"></span></a>
                         <ul>
                             <li><a href="#">Granos</a></li>
@@ -62,76 +66,112 @@
                             <li><a href="#">Dulces</a></li>
                         </ul>
                     </li>
-                    <li><a class="link-white col-md-3" href="#">Frios <span class="item-principal"></span></a></li>
-                    <li><a class="link-white col-md-3" href="#">Licores <span class="item-principal"></span></a></li>
-                    <li><a class="link-white col-md-3" href="#">Aseo <span class="item-principal"></span></a></li>
+                    <li><a class="link-white col-md-3" href="#">Frios <span class="item-principal"></span></a>
+                        <ul>
+                            <li><a href="#">Granos</a></li>
+                            <li><a href="#">Pastas</a></li>
+                            <li><a href="#">Salsas</a></li>
+                            <li><a href="#">Aceites</a></li>
+                            <li><a href="#">Panes</a></li>
+                            <li><a href="#">Dulces</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="link-white col-md-3" href="#">Licores <span class="item-principal"></span></a>
+                        <ul>
+                            <li><a href="#">Granos</a></li>
+                            <li><a href="#">Pastas</a></li>
+                            <li><a href="#">Salsas</a></li>
+                            <li><a href="#">Aceites</a></li>
+                            <li><a href="#">Panes</a></li>
+                            <li><a href="#">Dulces</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="link-white col-md-3" href="#">Aseo <span class="item-principal"></span></a>
+                        <ul>
+                            <li><a href="#">Granos</a></li>
+                            <li><a href="#">Pastas</a></li>
+                            <li><a href="#">Salsas</a></li>
+                            <li><a href="#">Aceites</a></li>
+                            <li><a href="#">Panes</a></li>
+                            <li><a href="#">Dulces</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
-            
+
         </div>
     </header>
 
     <main class="main">
-        <div class="container">
-            <h1>Esto es un titulo</h1>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium veniam vero tempora quia, neque
-                beatae commodi dolorem ipsum officia illum porro adipisci eum! Labore iste sunt officiis nihil sit
-                blanditiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, tempora consectetur? Vitae impedit nam
-                libero odio amet magnam deleniti quidem iste quo consequatur maxime, eius harum saepe molestias aliquid
-                eveniet?</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero neque repudiandae perspiciatis
-                expedita perferendis minus deserunt deleniti possimus? Cupiditate tenetur nostrum voluptatibus fuga
-                nobis quo eius deleniti sequi ducimus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero neque repudiandae perspiciatis
-                expedita perferendis minus deserunt deleniti possimus? Cupiditate tenetur nostrum voluptatibus fuga
-                nobis quo eius deleniti sequi ducimus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero neque repudiandae perspiciatis
-                expedita perferendis minus deserunt deleniti possimus? Cupiditate tenetur nostrum voluptatibus fuga
-                nobis quo eius deleniti sequi ducimus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero neque repudiandae perspiciatis
-                expedita perferendis minus deserunt deleniti possimus? Cupiditate tenetur nostrum voluptatibus fuga
-                nobis quo eius deleniti sequi ducimus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero neque repudiandae perspiciatis
-                expedita perferendis minus deserunt deleniti possimus? Cupiditate tenetur nostrum voluptatibus fuga
-                nobis quo eius deleniti sequi ducimus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero neque repudiandae perspiciatis
-                expedita perferendis minus deserunt deleniti possimus? Cupiditate tenetur nostrum voluptatibus fuga
-                nobis quo eius deleniti sequi ducimus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero neque repudiandae perspiciatis
-                expedita perferendis minus deserunt deleniti possimus? Cupiditate tenetur nostrum voluptatibus fuga
-                nobis quo eius deleniti sequi ducimus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero neque repudiandae perspiciatis
-                expedita perferendis minus deserunt deleniti possimus? Cupiditate tenetur nostrum voluptatibus fuga
-                nobis quo eius deleniti sequi ducimus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero neque repudiandae perspiciatis
-                expedita perferendis minus deserunt deleniti possimus? Cupiditate tenetur nostrum voluptatibus fuga
-                nobis quo eius deleniti sequi ducimus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero neque repudiandae perspiciatis
-                expedita perferendis minus deserunt deleniti possimus? Cupiditate tenetur nostrum voluptatibus fuga
-                nobis quo eius deleniti sequi ducimus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero neque repudiandae perspiciatis
-                expedita perferendis minus deserunt deleniti possimus? Cupiditate tenetur nostrum voluptatibus fuga
-                nobis quo eius deleniti sequi ducimus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero neque repudiandae perspiciatis
-                expedita perferendis minus deserunt deleniti possimus? Cupiditate tenetur nostrum voluptatibus fuga
-                nobis quo eius deleniti sequi ducimus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero neque repudiandae perspiciatis
-                expedita perferendis minus deserunt deleniti possimus? Cupiditate tenetur nostrum voluptatibus fuga
-                nobis quo eius deleniti sequi ducimus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero neque repudiandae perspiciatis
-                expedita perferendis minus deserunt deleniti possimus? Cupiditate tenetur nostrum voluptatibus fuga
-                nobis quo eius deleniti sequi ducimus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero neque repudiandae perspiciatis
-                expedita perferendis minus deserunt deleniti possimus? Cupiditate tenetur nostrum voluptatibus fuga
-                nobis quo eius deleniti sequi ducimus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero neque repudiandae perspiciatis
-                expedita perferendis minus deserunt deleniti possimus? Cupiditate tenetur nostrum voluptatibus fuga
-                nobis quo eius deleniti sequi ducimus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero neque repudiandae perspiciatis
-                expedita perferendis minus deserunt deleniti possimus? Cupiditate tenetur nostrum voluptatibus fuga
-                nobis quo eius deleniti sequi ducimus!</p>
+        <div class="container container-promociones">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="assets/image/carrusel/productos1.png" alt="First slide">
+                                <div class="carousel-caption item-decoration d-none d-md-block">
+                                    <h5>Los mejores productos al mejor precio</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img class="d-block w-100" src="assets/image/carrusel/tienda2.jpg" alt="Second slide">
+                                <div class="carousel-caption item-decoration d-none d-md-block">
+                                    <h5>Estamos para servirte</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-banner col-sm-12 col-md-4">
+                    <div class="banner">
+                        <a href="#">
+                            <img src="assets/image/pan.png" alt="Producto de la semana">
+                            <h5 class="text-banner">Producto de la semana</h5>
+                        </a>                        
+                    </div>                    
+                </div>
+            </div>            
+        </div>    
+        <div class="container container-categorias col-md-12">
+            <div class="row">
+                <div class="container-categoria col-md-3 col-sm-6">
+                    <div>
+                        <img class="large imgRedonda" src="assets/image/categorias-principal/01.jpg" alt="Mercado">
+                    </div>
+                    <h5>Mercado</h5>
+                </div>
+                <div class="container-categoria col-md-3 col-sm-6">
+                    <div>
+                        <img class="large imgRedonda" src="assets/image/categorias-principal/02.jpg" alt="Frios">
+                    </div>
+                    <h5>Frios</h5>
+                </div>
+                <div class="container-categoria col-md-3 col-sm-6">
+                    <div>
+                        <img class="large imgRedonda" src="assets/image/categorias-principal/03.jpg" alt="Licores">
+                    </div>
+                    <h5>Licores</h5>
+                </div>
+                <div class="container-categoria col-md-3 col-sm-6">
+                    <div>
+                        <img class="large imgRedonda" src="assets/image/categorias-principal/04.png" alt="Aseo">
+                    </div>
+                    <h5>Aseo</h5>
+                </div>
+            </div>            
         </div>
     </main>
 
@@ -164,18 +204,17 @@
                         <img class="super-small" src="assets/image/redes_sociales/whatsapp.svg" alt="Whatsapp">
                     </a>
                 </div>
-            </div>            
+            </div>
         </div>
-        <div class="col-md-12">
+        <div class="container-copyright col-md-12">
             <p>© 2020 by Tienda Universal</p>
         </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

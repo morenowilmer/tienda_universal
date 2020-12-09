@@ -1,14 +1,21 @@
 jQuery('document').ready(function($) {
 
-    var menuBtn = $('.menu-icon');
-    var menu = $('.navigation ul');
+    var menu = $('.menu-nav');
+    var verMenu = $('#ver-menu');
+    var ocultarMenu = $('#ocultar-menu');
+    var contenido = $('.main');
 
-    menuBtn.click(function() {
-
-        if (menu.hasClass('show')) {
-            menu.removeClass('show');
+    $('.menu-icon').click(function(elemento) {
+        if (elemento.target.id == 'ocultar-menu') {
+            menu.addClass('hide-element');
+            contenido.attr('style', 'padding-top: 10rem');
+            ocultarMenu.addClass('hide-element');
+            verMenu.removeClass('hide-element');
         } else {
-            menu.addClass('show');
-        }        
+            menu.removeClass('hide-element');
+            contenido.attr('style', 'padding-top: 23rem');
+            ocultarMenu.removeClass('hide-element');
+            verMenu.addClass('hide-element');
+        }
     })
 });
